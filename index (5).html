@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayembara Desain Logo HUT Ambalan Pramyosmar Ke-40</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-grad { background: linear-gradient(135deg, #421f07 0%, #5c2d0c 50%, #2b1303 100%); }
+        .gold-grad { background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%); }
+        .gold-text { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-[#2b1303]/95 backdrop-blur text-white z-40 border-b border-amber-900/30">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full gold-grad flex items-center justify-center text-[#2b1303] font-bold shadow">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-sm text-amber-400 block">PRAMYOSMAR</span>
+                    <span class="text-[10px] text-gray-300 block">SMK KAL 1 SBY</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm">
+                <a href="#tentang" class="hover:text-amber-400">Tentang</a>
+                <a href="#syarat" class="hover:text-amber-400">Syarat & Juknis</a>
+                <a href="#timeline" class="hover:text-amber-400">Timeline</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtKeX4lp3uzYpI2Eop-OQTt8FXTPrTIUaeq82bHouCTsfEUA/viewform?usp=publish-editor" target="_blank" class="gold-grad text-[#2b1303] px-4 py-2 rounded-xl font-bold shadow hover:brightness-110 flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Kirim Karya
+                </a>
+            </div>
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-gray-300 p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#421f07] px-4 py-3 space-y-2 border-t border-amber-900/30">
+            <a href="#tentang" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Tentang</a>
+            <a href="#syarat" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Syarat & Juknis</a>
+            <a href="#timeline" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Timeline</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtKeX4lp3uzYpI2Eop-OQTt8FXTPrTIUaeq82bHouCTsfEUA/viewform?usp=publish-editor" target="_blank" class="block text-amber-400 font-bold py-1 text-sm">Kirim Karya (G-Form)</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-28 pb-16 bg-grad text-white text-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <span class="inline-block bg-amber-900/50 border border-amber-500/30 text-amber-300 text-xs font-semibold px-4 py-1 rounded-full mb-4">
+                SAYEMBARA DESAIN LOGO RESMI
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold mb-4 leading-tight">
+                HUT AMBALAN PRAMYOSMAR <br><span class="gold-text">KE-40 TAHUN 2026</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-gray-300 text-sm sm:text-base mb-8">
+                Torehkan karya terbaikmu untuk identitas visual Pramuka Penegak SMK KAL 1 Surabaya.
+            </p>
+
+            <!-- COUNTDOWN -->
+            <div class="max-w-md mx-auto bg-[#2b1303]/80 border border-amber-500/30 rounded-2xl p-4 mb-8 shadow-xl">
+                <p id="c-status" class="text-xs uppercase text-amber-400 font-bold mb-2">Sisa Waktu Pengumpulan</p>
+                <div class="grid grid-cols-4 gap-2 text-center">
+                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="days" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Hari</span></div>
+                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="hours" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Jam</span></div>
+                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="minutes" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Menit</span></div>
+                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="seconds" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Detik</span></div>
+                </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="flex flex-col sm:flex-row justify-center gap-3">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtKeX4lp3uzYpI2Eop-OQTt8FXTPrTIUaeq82bHouCTsfEUA/viewform?usp=publish-editor" target="_blank" class="gold-grad text-[#2b1303] px-6 py-3 rounded-xl font-extrabold shadow hover:scale-105 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Kirim Karya
+                </a>
+                <a href="https://drive.google.com/drive/folders/1OfikArq1Em48Y4IagtqPwLkvcMYgQV09" target="_blank" class="bg-[#421f07] hover:bg-[#5c2d0c] border border-amber-500/40 px-6 py-3 rounded-xl font-bold transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-folder-open text-amber-400"></i> Folder Guide Book
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO & HADIAH -->
+    <section id="tentang" class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded">TENTANG ACARA</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2 mb-3">Ciptakan Identitas Baru Ambalan</h2>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Sayembara terbuka khusus untuk Dewan Ambalan & seluruh siswa kelas 10 SMK KAL 1 Surabaya. Logo terpilih akan diabadikan sebagai simbol resmi perayaan HUT ke-40.
+                </p>
+            </div>
+            <div class="bg-grad rounded-2xl p-6 text-white text-center border border-amber-500/30 shadow-lg">
+                <span class="text-xs font-bold bg-amber-400/20 text-amber-300 px-3 py-1 rounded-full border border-amber-400/30">PRIZE POOL</span>
+                <h3 class="text-gray-300 text-sm mt-3 mb-1">Pemenang Utama</h3>
+                <div class="text-4xl font-black text-amber-400 mb-2">Rp ???,-</div>
+                <p class="text-xs text-gray-300">+ Uang Pembinaan (Surprise!) + E-Sertifikat Resmi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYARAT & KETENTUAN -->
+    <section id="syarat" class="py-12 bg-gray-100 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 text-center mb-8">
+            <h2 class="text-2xl font-extrabold text-gray-900">Syarat & Ketentuan</h2>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm"><h3 class="font-bold mb-1">1. Orisinalitas</h3><p class="text-xs text-gray-600">Karya asli, bebas plagiasi, dan belum pernah dilombakan.</p></div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm"><h3 class="font-bold mb-1">2. Filosofi Logo</h3><p class="text-xs text-gray-600">Memuat elemen Pramuka Penegak dan angka HUT ke-40.</p></div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm"><h3 class="font-bold mb-1">3. Format File</h3><p class="text-xs text-gray-600">Pengumpulan awal PNG transparan, file vektor menyusul.</p></div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-center mb-8">
+            <h2 class="text-2xl font-extrabold text-gray-900">Timeline Pelaksanaan</h2>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-amber-50/50 p-5 rounded-xl border-l-4 border-amber-500 shadow-sm">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Tahap 01</span>
+                <h3 class="font-bold text-base text-gray-900 mt-1">Pendaftaran & Pengumpulan</h3>
+                <p class="text-xs text-gray-500 font-semibold mt-1">7 - 12 November 2026</p>
+            </div>
+            <div class="bg-amber-50/50 p-5 rounded-xl border-l-4 border-amber-500 shadow-sm">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Tahap 02</span>
+                <h3 class="font-bold text-base text-gray-900 mt-1">Penjurian</h3>
+                <p class="text-xs text-gray-500 font-semibold mt-1">13 November 2026</p>
+            </div>
+            <div class="bg-amber-50/50 p-5 rounded-xl border-l-4 border-amber-500 shadow-sm">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Tahap 03</span>
+                <h3 class="font-bold text-base text-gray-900 mt-1">Launching & Publikasi</h3>
+                <p class="text-xs text-gray-500 font-semibold mt-1">14 November 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2b1303] text-gray-400 py-6 border-t border-amber-900/30 text-xs text-center">
+        <p class="font-bold text-gray-300">Ambalan Pramyosmar — SMK KAL 1 Surabaya</p>
+        <p class="text-gray-500 mt-1">&copy; 2026 Sayembara Desain Logo HUT Ke-40.</p>
+    </footer>
+
+    <!-- SCRIPT COUNTDOWN -->
+    <script>
+        const target = new Date("2026-11-12T23:59:59").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const dist = target - now;
+            if (dist < 0) {
+                document.getElementById("c-status").innerText = "PENGUMPULAN DITUTUP";
+                ["days","hours","minutes","seconds"].forEach(id => document.getElementById(id).innerText = "00");
+            } else {
+                document.getElementById("days").innerText = String(Math.floor(dist / (1000 * 60 * 60 * 24))).padStart(2, '0');
+                document.getElementById("hours").innerText = String(Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                document.getElementById("minutes").innerText = String(Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                document.getElementById("seconds").innerText = String(Math.floor((dist % (1000 * 60)) / 1000)).padStart(2, '0');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
