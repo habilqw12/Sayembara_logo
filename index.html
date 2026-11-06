@@ -20,11 +20,12 @@
     <nav class="fixed top-0 left-0 w-full bg-[#2b1303]/95 backdrop-blur text-white z-40 border-b border-amber-900/30">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full gold-grad flex items-center justify-center text-[#2b1303] font-bold shadow">
-                    <i class="fa-solid fa-compass"></i>
+                <!-- LOGO FOTO AMBALAN (Ganti src sesuai nama file foto yang di-upload ke GitHub) -->
+                <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-amber-400 bg-white shadow flex items-center justify-center flex-shrink-0">
+                    <img src="logo-pramyosmar.png" alt="Logo Pramyosmar" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <span class="font-extrabold text-sm text-amber-400 block">PRAMYOSMAR</span>
+                    <span class="font-extrabold text-sm text-amber-400 block leading-tight">PRAMYOSMAR</span>
                     <span class="text-[10px] text-gray-300 block">SMK KAL 1 SBY</span>
                 </div>
             </div>
@@ -32,6 +33,7 @@
                 <a href="#tentang" class="hover:text-amber-400">Tentang</a>
                 <a href="#syarat" class="hover:text-amber-400">Syarat & Juknis</a>
                 <a href="#timeline" class="hover:text-amber-400">Timeline</a>
+                <a href="#kontak" class="hover:text-amber-400">Narahubung</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtKeX4lp3uzYpI2Eop-OQTt8FXTPrTIUaeq82bHouCTsfEUA/viewform?usp=publish-editor" target="_blank" class="gold-grad text-[#2b1303] px-4 py-2 rounded-xl font-bold shadow hover:brightness-110 flex items-center gap-2">
                     <i class="fa-solid fa-paper-plane"></i> Kirim Karya
                 </a>
@@ -44,6 +46,7 @@
             <a href="#tentang" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Tentang</a>
             <a href="#syarat" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Syarat & Juknis</a>
             <a href="#timeline" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Timeline</a>
+            <a href="#kontak" class="block text-gray-200 hover:text-amber-400 py-1 text-sm">Narahubung</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtKeX4lp3uzYpI2Eop-OQTt8FXTPrTIUaeq82bHouCTsfEUA/viewform?usp=publish-editor" target="_blank" class="block text-amber-400 font-bold py-1 text-sm">Kirim Karya (G-Form)</a>
         </div>
     </nav>
@@ -60,17 +63,6 @@
             <p class="max-w-xl mx-auto text-gray-300 text-sm sm:text-base mb-8">
                 Torehkan karya terbaikmu untuk identitas visual Pramuka Penegak SMK KAL 1 Surabaya.
             </p>
-
-            <!-- COUNTDOWN -->
-            <div class="max-w-md mx-auto bg-[#2b1303]/80 border border-amber-500/30 rounded-2xl p-4 mb-8 shadow-xl">
-                <p id="c-status" class="text-xs uppercase text-amber-400 font-bold mb-2">Sisa Waktu Pengumpulan</p>
-                <div class="grid grid-cols-4 gap-2 text-center">
-                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="days" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Hari</span></div>
-                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="hours" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Jam</span></div>
-                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="minutes" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Menit</span></div>
-                    <div class="bg-[#421f07] p-2 rounded-xl border border-amber-900/50"><span id="seconds" class="text-xl font-bold text-amber-400">00</span><span class="block text-[10px] text-gray-400">Detik</span></div>
-                </div>
-            </div>
 
             <!-- BUTTONS -->
             <div class="flex flex-col sm:flex-row justify-center gap-3">
@@ -139,28 +131,32 @@
         </div>
     </section>
 
+    <!-- NARAHUBUNG / CONTACT PERSON (KAK RAFA) -->
+    <section id="kontak" class="py-12 bg-gray-100 border-t border-gray-200 text-center">
+        <div class="max-w-xl mx-auto px-4">
+            <span class="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded">BUTUH BANTUAN?</span>
+            <h2 class="text-2xl font-extrabold text-gray-900 mt-2 mb-2">Narahubung / Contact Person</h2>
+            <p class="text-xs text-gray-600 mb-6">Ada kendala seputar pengiriman karya atau juknis? Hubungi panitia kami di bawah ini:</p>
+            
+            <a href="https://wa.me/6281228323895" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-2xl font-bold shadow transition text-sm">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Chat Kak Rafa (+62 812-2832-3895)
+            </a>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-[#2b1303] text-gray-400 py-6 border-t border-amber-900/30 text-xs text-center">
         <p class="font-bold text-gray-300">Ambalan Pramyosmar — SMK KAL 1 Surabaya</p>
         <p class="text-gray-500 mt-1">&copy; 2026 Sayembara Desain Logo HUT Ke-40.</p>
     </footer>
 
-    <!-- SCRIPT COUNTDOWN -->
+    <!-- SCRIPT MOBILE MENU -->
     <script>
-        const target = new Date("2026-11-12T23:59:59").getTime();
-        setInterval(() => {
-            const now = new Date().getTime();
-            const dist = target - now;
-            if (dist < 0) {
-                document.getElementById("c-status").innerText = "PENGUMPULAN DITUTUP";
-                ["days","hours","minutes","seconds"].forEach(id => document.getElementById(id).innerText = "00");
-            } else {
-                document.getElementById("days").innerText = String(Math.floor(dist / (1000 * 60 * 60 * 24))).padStart(2, '0');
-                document.getElementById("hours").innerText = String(Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
-                document.getElementById("minutes").innerText = String(Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
-                document.getElementById("seconds").innerText = String(Math.floor((dist % (1000 * 60)) / 1000)).padStart(2, '0');
-            }
-        }, 1000);
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
     </script>
 </body>
-</html>
+    </html>
+    
